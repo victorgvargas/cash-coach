@@ -16,7 +16,7 @@ describe('#Chart', () => {
     
     beforeEach(() => {
         // eslint-disable-next-line testing-library/no-render-in-setup
-        view = render(<Chart data={data} label="Expenses"/>);
+        view = render(<Chart data={data} label="Expenses" period="June"/>);
         container = view.container;
     });
     
