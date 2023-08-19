@@ -1,4 +1,5 @@
 import { Label, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import Title from "../title/Title";
 
 interface ChartProps {
     data: {day: number, amount: number}[],
@@ -8,8 +9,8 @@ interface ChartProps {
 
 const Chart = ({ data, label, period }: ChartProps) => {    
     return <>
-        <h3>{ period }</h3>
-        <ResponsiveContainer>
+        <Title>{ period }</Title>
+        <ResponsiveContainer width='100%' height={400}>
             <LineChart
                 data={data}
                 margin={{
