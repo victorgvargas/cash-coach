@@ -1,10 +1,16 @@
-import Income from './components/income/Income';
+import Expenses from './components/expenses/Expenses';
 
 function App() {
+  const data = [{
+    id: 0,
+    date: "20/08/2023",
+    receiver: "IKEA",
+    amount: 1000
+}];
 
   return (
     <>
-      <Income amount={1000} date='19/08/2023'/>
+      <Expenses data={data}/>
     </>
   );
 }

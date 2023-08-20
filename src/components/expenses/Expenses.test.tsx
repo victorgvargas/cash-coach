@@ -5,6 +5,7 @@ describe('#Expenses', () => {
     let view: RenderResult;
     let container: HTMLElement;
     const data = [{
+        id: 0,
         date: "20/08/2023",
         receiver: "IKEA",
         amount: 1000
